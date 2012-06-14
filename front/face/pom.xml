@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <!-- POM file generated with GWT webAppCreator -->
+  
+  <modelVersion>4.0.0</modelVersion>
+  
+  <parent>
+    <artifactId>front</artifactId>
+    <groupId>com.boom.front</groupId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  
+  <groupId>com.boom.front.face</groupId>
+  <artifactId>front-face</artifactId>
+  <packaging>war</packaging>
+  <version>1.0-SNAPSHOT</version>
+  
+  <name>Boom Front Face</name>
+
+  <build>
+    <plugins>
+
+      <!-- GWT Maven Plugin -->
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>gwt-maven-plugin</artifactId>
+        <version>2.4.0</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>compile</goal>
+              <goal>test</goal>
+              <goal>i18n</goal>
+              <goal>generateAsync</goal>
+            </goals>
+          </execution>
+        </executions>
+        <!-- Plugin configuration. There are many available options, see 
+          gwt-maven-plugin documentation at codehaus.org -->
+        <configuration>
+          <runTarget>face.html</runTarget>
+          <hostedWebapp>${webappDirectory}</hostedWebapp>
+          <i18nMessagesBundle>com.boom.front.face.client.Messages</i18nMessagesBundle>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>
