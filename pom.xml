@@ -29,4 +29,10 @@
     <module>front</module>
   </modules>
   
+  <scm>
+	<connection>scm:git:https://github.com/hmanon/boom.git</connection>
+	<url>scm:git:https://github.com/hmanon/boom.git</url>
+	<developerConnection>scm:git:https://github.com/hmanon/boom.git</developerConnection>
+  </scm>
+
 </project>
