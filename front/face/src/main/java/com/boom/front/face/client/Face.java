@@ -1,5 +1,6 @@
 package com.boom.front.face.client;
 
+import com.boom.front.commons.client.Stub;
 import com.boom.front.face.shared.FieldVerifier;
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
@@ -40,6 +41,7 @@ public class Face implements EntryPoint {
    * This is the entry point method.
    */
   public void onModuleLoad() {
+    new Stub();
     final Button sendButton = new Button( messages.sendButton() );
     final TextBox nameField = new TextBox();
     nameField.setText( messages.nameField() );

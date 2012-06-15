@@ -16,7 +16,7 @@
   
   <name>Boom Front</name>
   
-    <properties>
+  <properties>
     <!-- Convenience property to set the GWT version -->
     <gwtVersion>2.4.0</gwtVersion>
     <!-- GWT needs at least java 1.5 -->

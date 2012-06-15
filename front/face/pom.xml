@@ -47,4 +47,11 @@
     </plugins>
   </build>
 
+  <dependencies>
+  	<dependency>
+  		<groupId>com.boom.front.commons</groupId>
+  		<artifactId>front-commons</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>
 </project>
