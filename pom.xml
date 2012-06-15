@@ -35,4 +35,17 @@
 	<developerConnection>scm:git:https://github.com/hmanon/boom.git</developerConnection>
   </scm>
 
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-scm-plugin</artifactId>
+        <version>1.7</version>
+        <configuration>
+          <tag>tag name</tag>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  
 </project>
